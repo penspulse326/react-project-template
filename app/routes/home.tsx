@@ -31,6 +31,9 @@ export default function Home() {
         <Link to="/example-4" className="font-semibold underline transition-colors">
           [example-04] AJAX with useEffect
         </Link>
+        <Link to="/example-5" className="font-semibold underline transition-colors">
+          [example-05] Component
+        </Link>
         <Link to="/dashboard" className="font-semibold underline transition-colors">
           Dashboard
         </Link>

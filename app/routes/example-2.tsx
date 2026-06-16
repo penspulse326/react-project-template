@@ -45,7 +45,7 @@ export default function Example2Page() {
 
   return (
     <>
-      <h1 className="text-4xl font-extrabold tracking-tight">[example-02] useEffect</h1>
+      <h1 className="m-4 text-4xl font-extrabold tracking-tight">[example-02] useEffect</h1>
       <p className="text-lg text-slate-400">{count}</p>
 
       <div className="flex items-center justify-center gap-2">

@@ -52,7 +52,7 @@ export default function Example3Page() {
 
   return (
     <div className="flex flex-col items-center justify-center gap-4">
-      <h1 className="text-4xl font-extrabold tracking-tight">[example-04] AJAX with useEffect</h1>
+      <h1 className="m-4 text-4xl font-extrabold tracking-tight">[example-04] AJAX with useEffect</h1>
       <p className="text-slate-400">Not Recommended</p>
 
       <Button type="button" onClick={handleGetUsers}>Button</Button>
