@@ -14,3 +14,10 @@ export async function getUsers() {
     return result.users;
   }, '無法取得使用者資料');
 }
+
+export async function getUsersError() {
+  return safeRequest<User[]>(async () => {
+    const result = await http.get<{ users: User[] }>('/usrs');
+    return result.users;
+  }, '無法取得使用者資料');
+}

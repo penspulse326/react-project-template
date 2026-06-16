@@ -4,7 +4,7 @@ export default function Layout() {
   const location = useLocation();
 
   return (
-    <main className="flex h-screen items-center justify-center bg-slate-100 font-sans text-slate-800">
+    <main className="flex min-h-screen items-center justify-center bg-slate-100 font-sans text-slate-800">
       <div className="space-y-4 text-center">
         <Outlet />
 

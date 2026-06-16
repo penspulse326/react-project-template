@@ -8,24 +8,17 @@ export async function clientLoader() {
 
 export default function Example3Page() {
   const response = useLoaderData<typeof clientLoader>();
-  // const [users, setUsers] = useState<User[]>([]);
-
-  // async function handleGetUsers() {
-  //     const data = await getUsers();
-  //     setUsers(data);
-  // }
-
-  // useEffect(() => {
-  //     handleGetUsers();
-  // }, []);
 
   return (
-    <div className="flex flex-col items-center justify-center">
-      <h1>Users Index Page</h1>
-      <button type="button" className="rounded bg-blue-500 px-4 py-2 text-white">Button</button>
+    <div className="flex flex-col items-center justify-center gap-4">
+      <h1 className="text-4xl font-extrabold tracking-tight">[example-03] AJAX with Client Loader</h1>
+      <p className="text-slate-400">Recommended</p>
 
       {!response.success && (
-        <p>Error: 取得資料失敗</p>
+        <p>
+          Error:
+          {response.message}
+        </p>
       )}
 
       {response.success && response.data.map(user => (
