@@ -9,6 +9,8 @@ export default [
     route('example-3', 'routes/example-3.tsx'),
     route('example-4', 'routes/example-4.tsx'),
     route('example-5', 'routes/example-5.tsx'),
+    route('example-6', 'routes/example-6.tsx'),
+    route('example-6/:id', 'routes/example-6-detail.tsx'),
     route('dashboard', 'routes/dashboard/layout.tsx', [
       index('routes/dashboard/index.tsx'),
       route('settings', 'routes/dashboard/settings.tsx'),
