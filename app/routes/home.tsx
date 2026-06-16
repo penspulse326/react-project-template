@@ -25,8 +25,8 @@ export default function Home() {
         <Link to="/example-2" className="font-semibold underline transition-colors">
           [example-02] useEffect
         </Link>
-        <Link to="/users" className="font-semibold underline transition-colors">
-          Users
+        <Link to="/example-3" className="font-semibold underline transition-colors">
+          [example-03] Loader
         </Link>
         <Link to="/dashboard" className="font-semibold underline transition-colors">
           Dashboard

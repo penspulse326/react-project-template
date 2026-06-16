@@ -1,7 +1,7 @@
 import { useEffect, useState } from 'react';
 import { Button } from '~/components/ui/button';
 
-export default function Example1UseState() {
+export default function Example2Page() {
   const [count, setCount] = useState(0);
 
   function handleIncrease() {

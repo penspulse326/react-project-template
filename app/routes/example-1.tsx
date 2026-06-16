@@ -1,7 +1,7 @@
 import { useState } from 'react';
 import { Button } from '~/components/ui/button';
 
-export default function Example1UseState() {
+export default function Example1Page() {
   const [count, setCount] = useState(0);
   const [countdown, setCountdown] = useState<number | null>(null);
 

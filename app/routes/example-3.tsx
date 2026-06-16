@@ -3,11 +3,10 @@ import { getUsers } from '~/services/users';
 
 export async function clientLoader() {
   const response = await getUsers();
-
   return response;
 }
 
-function UsersIndexPage() {
+export default function Example3Page() {
   const response = useLoaderData<typeof clientLoader>();
   // const [users, setUsers] = useState<User[]>([]);
 
@@ -43,5 +42,3 @@ function UsersIndexPage() {
     </div>
   );
 }
-
-export default UsersIndexPage;
