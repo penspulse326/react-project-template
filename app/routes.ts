@@ -5,6 +5,7 @@ export default [
   layout('routes/layout.tsx', [
     index('routes/home.tsx'),
     route('example-1', 'routes/example-1.tsx'),
+    route('example-2', 'routes/example-2.tsx'),
     ...prefix('users', [
       index('routes/users/index.tsx'),
     ]),

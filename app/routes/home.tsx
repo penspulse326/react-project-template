@@ -22,6 +22,9 @@ export default function Home() {
         <Link to="/example-1" className="font-semibold underline transition-colors">
           [example-01] useState
         </Link>
+        <Link to="/example-2" className="font-semibold underline transition-colors">
+          [example-02] useEffect
+        </Link>
         <Link to="/users" className="font-semibold underline transition-colors">
           Users
         </Link>
