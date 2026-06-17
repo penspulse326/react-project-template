@@ -43,6 +43,9 @@ export default function Home() {
         <Link to="/example-8" className="font-semibold underline transition-colors">
           [example-08] Zustand
         </Link>
+        <Link to="/example-9" className="font-semibold underline transition-colors">
+          [example-09] Zod 驗證範例
+        </Link>
         <Link to="/dashboard" className="font-semibold underline transition-colors">
           Dashboard
         </Link>
