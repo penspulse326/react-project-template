@@ -26,10 +26,10 @@ export default function Home() {
           [example-02] useEffect
         </Link>
         <Link to="/example-3" className="font-semibold underline transition-colors">
-          [example-03] AJAX with Client Loader
+          [example-03] AJAX with useEffect
         </Link>
         <Link to="/example-4" className="font-semibold underline transition-colors">
-          [example-04] AJAX with useEffect
+          [example-04] AJAX with Client Loader
         </Link>
         <Link to="/example-5" className="font-semibold underline transition-colors">
           [example-05] Component
