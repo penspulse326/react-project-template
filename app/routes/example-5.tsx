@@ -1,5 +1,4 @@
 import { useLoaderData } from 'react-router';
-import UserInfoCard from '~/components/UserInfoCard';
 import { getUsers } from '~/services/users';
 
 export async function clientLoader() {
@@ -7,12 +6,13 @@ export async function clientLoader() {
   return response;
 }
 
-export default function Example5Page() {
+export default function Example3Page() {
   const response = useLoaderData<typeof clientLoader>();
 
   return (
     <div className="flex flex-col items-center justify-center gap-4">
-      <h1 className="m-4 text-4xl font-extrabold tracking-tight">[example-05] Component</h1>
+      <h1 className="m-4 text-4xl font-extrabold tracking-tight">[example-03] AJAX with Client Loader</h1>
+      <p className="text-slate-400">Recommended</p>
 
       {!response.success && (
         <p>
@@ -21,12 +21,17 @@ export default function Example5Page() {
         </p>
       )}
 
-      <div className="flex flex-wrap justify-center gap-2">
-        {' '}
-        {response.success && response.data.map(user => (
-          <UserInfoCard key={user.id} user={user} />
-        ))}
-      </div>
+      {response.success && response.data.map(user => (
+        <div key={user.id}>
+          {user.firstName}
+          {' '}
+          {user.lastName}
+          {' '}
+          {user.age}
+          {' '}
+          {user.gender}
+        </div>
+      ))}
     </div>
   );
 }
