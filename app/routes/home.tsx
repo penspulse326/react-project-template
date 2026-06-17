@@ -37,6 +37,12 @@ export default function Home() {
         <Link to="/example-6" className="font-semibold underline transition-colors">
           [example-06] Dynamic Routing
         </Link>
+        <Link to="/example-7" className="font-semibold underline transition-colors">
+          [example-07] React Hook Form
+        </Link>
+        <Link to="/example-8" className="font-semibold underline transition-colors">
+          [example-08] Zustand
+        </Link>
         <Link to="/dashboard" className="font-semibold underline transition-colors">
           Dashboard
         </Link>
