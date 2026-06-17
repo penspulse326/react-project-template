@@ -20,7 +20,7 @@ export default function Example6Page() {
       {!response.success && (
         <p className="text-red-500">
           Error:
-          {' '}
+
           {response.message}
         </p>
       )}

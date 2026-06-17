@@ -24,7 +24,7 @@ export default function Example6DetailPage() {
       {!response.success && (
         <p className="text-red-500">
           Error:
-          {' '}
+
           {response.message}
         </p>
       )}
@@ -33,7 +33,7 @@ export default function Example6DetailPage() {
         <div className="flex flex-col items-center gap-2">
           <p className="text-sm text-slate-500">
             目前匹配到的動態路由參數 ID 為:
-            {' '}
+
             <strong>{response.data.id}</strong>
           </p>
           <UserInfoCard user={response.data} />

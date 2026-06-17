@@ -26,7 +26,7 @@ export default function Home() {
           [example-02] useEffect
         </Link>
         <Link to="/example-3" className="font-semibold underline transition-colors">
-          [example-03] AJAX with useEffect  Component
+          [example-03] Component
         </Link>
         <Link to="/example-4" className="font-semibold underline transition-colors">
           [example-04] AJAX with useEffect
@@ -44,7 +44,7 @@ export default function Home() {
           [example-08] Zustand
         </Link>
         <Link to="/example-9" className="font-semibold underline transition-colors">
-          [example-09] Zod 驗證範例
+          [example-09] Zod
         </Link>
         <Link to="/dashboard" className="font-semibold underline transition-colors">
           Dashboard

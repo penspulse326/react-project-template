@@ -82,10 +82,10 @@ export default function LoginForm({ onLoginSuccess }: LoginFormProps) {
           <div className="flex items-center justify-between gap-2">
             <span>
               💡
-              {' '}
+
               <strong>測試帳密：</strong>
               <code className="rounded border bg-white px-1 py-0.5 font-mono select-all">emilys</code>
-              {' '}
+
               /
               <code className="ml-1 rounded border bg-white px-1 py-0.5 font-mono select-all">emilyspass</code>
             </span>

@@ -6,9 +6,10 @@ import { Card, CardContent, CardHeader, CardTitle } from './ui/card';
 interface Props {
   user: User;
   to?: string;
+  children?: React.ReactNode;
 }
 
-export default function UserInfoCard({ user, to }: Props) {
+export default function UserInfoCard({ user, to, children }: Props) {
   const { firstName, lastName, age, gender } = user;
 
   const cardContent = (
@@ -20,7 +21,6 @@ export default function UserInfoCard({ user, to }: Props) {
       <CardHeader>
         <CardTitle>
           {firstName}
-          {' '}
           {lastName}
         </CardTitle>
       </CardHeader>
@@ -33,6 +33,8 @@ export default function UserInfoCard({ user, to }: Props) {
           Gender:
           {gender}
         </p>
+        {children}
+
       </CardContent>
     </Card>
   );

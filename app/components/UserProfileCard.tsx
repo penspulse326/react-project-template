@@ -1,11 +1,11 @@
 import type { LoginResponse } from '~/services/users';
 import { Mail, ShieldCheck } from 'lucide-react';
 
-interface UserProfileCardProps {
+interface Props {
   profile: LoginResponse;
 }
 
-export default function UserProfileCard({ profile }: UserProfileCardProps) {
+export default function UserProfileCard({ profile }: Props) {
   const fullName = `${profile.firstName} ${profile.lastName}`;
 
   return (
@@ -84,7 +84,7 @@ export default function UserProfileCard({ profile }: UserProfileCardProps) {
               </div>
               <span className="font-mono text-[7px] tracking-wider text-slate-400">
                 ID:
-                {' '}
+
                 {profile.id.toString().padStart(6, '0')}
               </span>
             </div>

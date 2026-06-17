@@ -1,5 +1,5 @@
 import { LogOut } from 'lucide-react';
-import LoginForm from '~/components/LoginForm';
+import LoginForm from '~/components/container/LoginForm';
 import { Button } from '~/components/ui/button';
 import { useUserStore } from '~/store/userStore';
 

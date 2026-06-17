@@ -1,6 +1,6 @@
 import UserInfoCard from '~/components/UserInfoCard';
 
-export default function Example5Page() {
+export default function Example3Page() {
   const users = [
     {
       id: 1,
@@ -286,7 +286,7 @@ export default function Example5Page() {
 
   return (
     <div className="flex flex-col items-center justify-center gap-4">
-      <h1 className="m-4 text-4xl font-extrabold tracking-tight">[example-05] Component</h1>
+      <h1 className="m-4 text-4xl font-extrabold tracking-tight">[example-03] Component</h1>
 
       <h2 className="mt-4 text-xl">Not Use Component</h2>
       <div className="flex flex-wrap justify-center gap-2">
@@ -295,7 +295,7 @@ export default function Example5Page() {
             <img src={user.image} alt={user.firstName} />
             <p>
               {user.firstName}
-              {' '}
+
               {user.lastName}
             </p>
             <p>{user.age}</p>
@@ -307,7 +307,9 @@ export default function Example5Page() {
       <h2 className="mt-4 text-xl">Use Component</h2>
       <div className="flex flex-wrap justify-center gap-2">
         {users.map(user => (
-          <UserInfoCard key={user.id} user={user} />
+          <UserInfoCard key={user.id} user={user}>
+            User Card Children
+          </UserInfoCard>
         ))}
       </div>
     </div>

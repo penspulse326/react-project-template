@@ -3,7 +3,7 @@ import { useEffect, useState } from 'react';
 import { Button } from '~/components/ui/button';
 import { getUsers, getUsersError } from '~/services/users';
 
-export default function Example3Page() {
+export default function Example4Page() {
   const [users, setUsers] = useState<User[]>([]);
   const [loading, setLoading] = useState(false);
   const [errorMessage, setErrorMessage] = useState('');
@@ -73,11 +73,11 @@ export default function Example3Page() {
                   users.map(user => (
                     <div key={user.id}>
                       {user.firstName}
-                      {' '}
+
                       {user.lastName}
-                      {' '}
+
                       {user.age}
-                      {' '}
+
                       {user.gender}
                     </div>
                   ))
