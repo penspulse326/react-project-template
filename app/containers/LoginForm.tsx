@@ -1,4 +1,4 @@
-import type { LoginResponse } from '~/services/users';
+import type { LoginResponse } from '~/services/user';
 import { AlertCircle, KeyRound, Loader2, Lock, ShieldAlert, User as UserIcon } from 'lucide-react';
 import { useState } from 'react';
 import { useForm } from 'react-hook-form';
@@ -14,7 +14,7 @@ import {
 import { Input } from '~/components/ui/input';
 import { Label } from '~/components/ui/label';
 import { cn } from '~/lib/utils';
-import { loginUser } from '~/services/users';
+import { loginUser } from '~/services/user';
 
 interface LoginFormInputs {
   username: string;

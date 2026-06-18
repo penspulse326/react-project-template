@@ -1,7 +1,7 @@
-import type { User } from '~/services/users';
+import type { User } from '~/services/user';
 import { useEffect, useState } from 'react';
 import { Button } from '~/components/ui/button';
-import { getUsers, getUsersError } from '~/services/users';
+import { getUsers, getUsersError } from '~/services/user';
 
 export default function Example4Page() {
   const [users, setUsers] = useState<User[]>([]);

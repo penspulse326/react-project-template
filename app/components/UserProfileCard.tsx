@@ -1,4 +1,4 @@
-import type { LoginResponse } from '~/services/users';
+import type { LoginResponse } from '~/services/user';
 import { Mail, ShieldCheck } from 'lucide-react';
 
 interface Props {

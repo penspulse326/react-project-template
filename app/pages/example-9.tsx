@@ -1,5 +1,5 @@
-import ZodApiSection from '~/components/container/ZodApiSection';
-import ZodFormSection from '~/components/container/ZodFormSection';
+import ZodApiSection from '~/containers/ZodApiSection';
+import ZodFormSection from '~/containers/ZodFormSection';
 
 export default function Example9Page() {
   return (

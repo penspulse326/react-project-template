@@ -1,10 +1,10 @@
-import type { User } from '~/services/users';
+import type { User } from '~/types/user';
 import { CheckCircle, Database, ShieldAlert } from 'lucide-react';
 import { useState } from 'react';
 import { Button } from '~/components/ui/button';
 import { Input } from '~/components/ui/input';
 import { Label } from '~/components/ui/label';
-import { getUserValidated, UserSchema } from '~/services/users';
+import { getUserValidated, UserSchema } from '~/services/user';
 
 export default function ZodApiSection() {
   const [userId, setUserId] = useState<string>('1');

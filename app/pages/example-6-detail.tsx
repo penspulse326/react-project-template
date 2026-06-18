@@ -1,9 +1,9 @@
 import type { ClientLoaderFunctionArgs } from 'react-router';
-import type { User } from '~/services/users';
-import type { ApiResponse } from '~/types/api';
+import type { User } from '~/services/user';
+import type { ApiResponse } from '~/types/http';
 import { Link, useLoaderData } from 'react-router';
 import UserInfoCard from '~/components/UserInfoCard';
-import { getUser } from '~/services/users';
+import { getUser } from '~/services/user';
 
 export async function clientLoader({ params }: ClientLoaderFunctionArgs): Promise<ApiResponse<User>> {
   const { id } = params;

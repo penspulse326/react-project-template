@@ -1,8 +1,8 @@
-import type { ApiResponse } from '~/types/api';
+import type { ApiResponse } from '~/types/http';
 import axios from 'axios';
 
 const axiosInstance = axios.create({
-  baseURL: 'https://dummyjson.com',
+  baseURL: 'https://dummyjson.com', // 這裡換成靜態變數或使用 .env 替換
 });
 
 export const http = {

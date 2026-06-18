@@ -1,6 +1,6 @@
 import { LogOut } from 'lucide-react';
-import LoginForm from '~/components/container/LoginForm';
 import { Button } from '~/components/ui/button';
+import LoginForm from '~/containers/LoginForm';
 import { useUserStore } from '~/store/userStore';
 
 export default function Example8Page() {

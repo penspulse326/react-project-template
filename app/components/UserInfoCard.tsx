@@ -1,4 +1,4 @@
-import type { User } from '~/services/users';
+import type { User } from '~/services/user';
 import { Link } from 'react-router';
 import { cn } from '~/lib/utils';
 import { Card, CardContent, CardHeader, CardTitle } from './ui/card';

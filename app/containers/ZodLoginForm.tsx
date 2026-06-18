@@ -1,4 +1,4 @@
-import type { LoginResponse } from '~/services/users';
+import type { LoginResponse } from '~/types/user';
 import { zodResolver } from '@hookform/resolvers/zod';
 import { AlertCircle, KeyRound, Loader2, Lock, ShieldAlert, User as UserIcon } from 'lucide-react';
 import { useState } from 'react';
@@ -16,7 +16,7 @@ import {
 import { Input } from '~/components/ui/input';
 import { Label } from '~/components/ui/label';
 import { cn } from '~/lib/utils';
-import { loginUser } from '~/services/users';
+import { loginUser } from '~/services/user';
 
 // 1. 定義 Zod Schema（集中管理所有的驗證邏輯與錯誤訊息）
 const loginSchema = z.object({

@@ -2,21 +2,21 @@ import type { RouteConfig } from '@react-router/dev/routes';
 import { index, layout, route } from '@react-router/dev/routes';
 
 export default [
-  layout('routes/layout.tsx', [
-    index('routes/home.tsx'),
-    route('example-1', 'routes/example-1.tsx'),
-    route('example-2', 'routes/example-2.tsx'),
-    route('example-3', 'routes/example-3.tsx'),
-    route('example-4', 'routes/example-4.tsx'),
-    route('example-5', 'routes/example-5.tsx'),
-    route('example-6', 'routes/example-6.tsx'),
-    route('example-6/:id', 'routes/example-6-detail.tsx'),
-    route('example-7', 'routes/example-7.tsx'),
-    route('example-8', 'routes/example-8.tsx'),
-    route('example-9', 'routes/example-9.tsx'),
-    route('dashboard', 'routes/dashboard/layout.tsx', [
-      index('routes/dashboard/index.tsx'),
-      route('settings', 'routes/dashboard/settings.tsx'),
+  layout('pages/layout.tsx', [
+    index('pages/home.tsx'),
+    route('example-1', 'pages/example-1.tsx'),
+    route('example-2', 'pages/example-2.tsx'),
+    route('example-3', 'pages/example-3.tsx'),
+    route('example-4', 'pages/example-4.tsx'),
+    route('example-5', 'pages/example-5.tsx'),
+    route('example-6', 'pages/example-6.tsx'),
+    route('example-6/:id', 'pages/example-6-detail.tsx'),
+    route('example-7', 'pages/example-7.tsx'),
+    route('example-8', 'pages/example-8.tsx'),
+    route('example-9', 'pages/example-9.tsx'),
+    route('dashboard', 'pages/dashboard/layout.tsx', [
+      index('pages/dashboard/index.tsx'),
+      route('settings', 'pages/dashboard/settings.tsx'),
     ]),
   ]),
 ] satisfies RouteConfig;

@@ -1,21 +1,6 @@
+import type { LoginResponse, User } from '~/types/user';
 import { z } from 'zod';
 import { http, safeRequest } from '~/lib/http';
-
-export interface User {
-  id: number;
-  age: number;
-  firstName: string;
-  lastName: string;
-  gender: string;
-  email?: string;
-  phone?: string;
-  image?: string;
-  company?: {
-    name: string;
-    title: string;
-    department: string;
-  };
-}
 
 export async function getUsers() {
   return safeRequest<User[]>(async () => {
@@ -36,18 +21,6 @@ export async function getUsersError() {
     const result = await http.get<{ users: User[] }>('/usrs');
     return result.users;
   }, '無法取得使用者資料');
-}
-
-export interface LoginResponse {
-  id: number;
-  username: string;
-  email: string;
-  firstName: string;
-  lastName: string;
-  gender: string;
-  image: string;
-  accessToken: string;
-  refreshToken: string;
 }
 
 export async function loginUser(username: string, password: string, expiresInMins = 30) {

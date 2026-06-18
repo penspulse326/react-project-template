@@ -1,4 +1,4 @@
-import type { LoginResponse } from '~/services/users';
+import type { LoginResponse } from '~/services/user';
 import { create } from 'zustand';
 
 interface UserState {
